@@ -1,0 +1,97 @@
+/*
+Theme Name: Stu's Simple Theme
+Author: Your Name
+Description: A super simple dark theme with no banner images, focusing on the latest post.
+Version: 1.0
+*/
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .post {
+    margin-bottom: 40px;
+  }
+  
+  .post-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .post-date {
+    font-size: 14px;
+    color: #8f8;
+    margin-bottom: 20px;
+  }
+  
+  .post-content {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .site-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #0f0;
+    text-decoration: none;
+  }
+  
+  .site-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .site-title a:hover {
+    color: #8f8;
+  }
+  
+  .cursor {
+    background-color: #0f0; /* Set the background color to match the text color */
+    width: 0.6em; /* Set the width of the cursor */
+    height: 1em; /* Set the height of the cursor */
+    display: inline-block; /* Make the cursor an inline-block element */
+    animation: blink 1s infinite;
+    margin-left: 2px; /* Add a small space between the cursor and the last character */
+    vertical-align: text-bottom; /* Align the cursor with the text baseline */
+    line-height: inherit; /* Set the line-height equal to the line-height of the text */
+  }  
+    
+  @keyframes blink {
+    from, to {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  a {
+    color: #0f0;
+    text-decoration: none;
+    font-weight: bold; /* Make the link text bold */
+    background-color: rgba(0, 255, 0, 0.1); /* Add a slight green background */
+    padding: 2px 4px; /* Add some padding around the links */
+    border-radius: 3px; /* Add rounded corners to the links */
+    border: 1px solid rgba(0, 255, 0, 0.3); /* Add a subtle border */
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    background-color: rgba(0, 255, 0, 0.2); /* Darken the background color on hover */
+  }
+  
+  .post-text {
+    display: inline;
+  }  
