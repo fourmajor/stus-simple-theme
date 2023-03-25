@@ -47,11 +47,12 @@
   document.addEventListener('DOMContentLoaded', function() {
     var postContents = document.querySelectorAll('.post-content');
     postContents.forEach(function(postContent) {
-      var text = postContent.textContent.trim();
-      postContent.innerHTML = '<span class="post-text">' + text + '</span><span class="cursor"></span>';
+      var paragraphs = postContent.querySelectorAll('p');
+      var lastParagraph = paragraphs[paragraphs.length - 1];
+      var text = lastParagraph.textContent.trim();
+      lastParagraph.innerHTML = '<span class="post-text">' + text + '</span><span class="cursor"></span>';
     });
   });
 </script>
-
 
 <?php get_footer(); ?>
